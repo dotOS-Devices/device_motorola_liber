@@ -24,6 +24,12 @@ $(call inherit-product, device/motorola/liber/device.mk)
 # Inherit some common DotOS stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
 
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+
+# FaceUnlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := dot_liber
 PRODUCT_DEVICE := liber
@@ -40,19 +46,10 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Build fingerprint
-BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys
-BUILD_DESCRIPTION := redfin-user 11 RQ3A.210905.001 7511028 release-keys
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="$(BUILD_DESCRIPTION)"
+    PRIVATE_BUILD_DESC="liber_retail-user 10 QPIS30.73-33-6 fffd8e release-keys" \
+    PRODUCT_NAME=liber_retail
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
-
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-
-# FaceUnlock
-TARGET_FACE_UNLOCK_SUPPORTED := true
