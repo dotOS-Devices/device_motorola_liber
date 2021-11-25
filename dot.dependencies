@@ -22,12 +22,6 @@
        "branch"      : "eleven"
    },
    {
-       "repository"  : "LineageOS/android_hardware_qcom_display",
-       "target_path" : "hardware/qcom-caf/sm8150/display",
-       "remote"      : "github",
-       "branch"      : "lineage-18.1-caf-sm8150"
-   },
-   {
        "repository"  : "LineageOS/android_hardware_libhardware",
        "target_path" : "hardware/libhardware",
        "remote"      : "github",
