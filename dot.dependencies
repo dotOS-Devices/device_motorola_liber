@@ -4,22 +4,12 @@
       "target_path"  : "device/motorola/sm6150-common"
    },
    {
-       "repository"  : "NemesisDevelopers/moto-camera/motorola_camera2_whitney",
-       "target_path" : "packages/apps/MotCamera2",
-       "remote"      : "gitlab",
-       "branch"      : "eleven-arm64"
+       "repository"  : "proprietary_vendor_motorola-liber",
+       "target_path" : "vendor/motorola",
    },
    {
-       "repository"  : "NemesisDevelopers/moto-camera/motorola_camera2_overlay",
-       "target_path" : "packages/apps/MotCamera2-overlay",
-       "remote"      : "gitlab",
-       "branch"      : "ten"
-   },
-   {
-       "repository"  : "NemesisDevelopers/motorola/motorola_motosignatureapp",
-       "target_path" : "packages/apps/MotoSignatureApp",
-       "remote"      : "gitlab",
-       "branch"      : "eleven"
+       "repository"  : "kernel_motorola_liber",
+       "target_path" : "kernel/motorola/liber",
    },
    {
        "repository"  : "LineageOS/android_hardware_libhardware",
